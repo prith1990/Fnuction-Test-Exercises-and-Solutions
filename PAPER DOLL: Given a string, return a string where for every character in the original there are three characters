@@ -1,0 +1,6 @@
+def paper_doll(text):
+    new_list = [letter*3 for letter in text]
+    new_str  = "".join(new_list) 
+    return(new_str)    
+
+print(paper_doll('Hello'))
