@@ -1,0 +1,14 @@
+def blackjack(a,b,c):
+    sum = a+b+c 
+    if ((sum)<=21):
+        return (sum)
+    elif ((sum)>21 & (11 in [a,b,c])):
+        adjusted_sum = sum-10
+        if (adjusted_sum <= 21):
+            return(adjusted_sum)
+        else:
+            return("Bust")
+
+print(blackjack(5,6,7))
+print(blackjack(9,9,9))
+print(blackjack(9,9,21))
