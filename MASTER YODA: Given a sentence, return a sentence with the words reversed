@@ -1,0 +1,7 @@
+def master_yoda(text):
+    str1  = text.split()
+    new_list = str1[: : -1]
+    new_str = ' '.join(new_list)
+    return new_str
+    
+print(master_yoda('I am home'))
